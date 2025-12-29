@@ -10,7 +10,7 @@
 <body>
     <header>
         <div style="font-weight: bold;">Sanfoundry Quiz Engine</div>
-        <div class="stats">Score: <span id="score">0</span>/ <span id="total">52</span></div>
+        <div class="stats">Score: <span id="score">0</span>/ <span id="total">53</span></div>
     </header>
     <div class="page-header">
         <h1>8. Deadlocks</h1>
@@ -26,7 +26,7 @@
                 <div class="option" onclick="check(this)">c) that can be shared between various threads</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(0)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-0" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-0">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -42,7 +42,7 @@
                     it</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(1)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-1" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-1">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -57,7 +57,7 @@
                 <div class="option" onclick="check(this)">c) all of the mentioned</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(2)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-2" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-2">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -71,7 +71,7 @@
                 <div class="option" onclick="check(this)">c) using pipes</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(3)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-3" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-3">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -85,7 +85,7 @@
                 <div class="option" onclick="check(this)">c) elevator algorithm</div>
                 <div class="option" onclick="check(this)">d) karn’s algorithm</div>
             </div>
-            <button class="sf-btn" onclick="toggle(4)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-4" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-4">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -100,7 +100,7 @@
                 <div class="option" onclick="check(this)">c) resource once available can disappear</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(5)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-5" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-5">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -115,7 +115,7 @@
                     intervals</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(6)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-6" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-6">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -130,7 +130,7 @@
                 <div class="option" onclick="check(this)">c) inversion</div>
                 <div class="option" onclick="check(this)">d) aging</div>
             </div>
-            <button class="sf-btn" onclick="toggle(7)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-7" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-7">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -145,7 +145,7 @@
                 <div class="option" onclick="check(this)">c) inversion graph</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(8)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-8" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-8">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -159,7 +159,7 @@
                 <div class="option" onclick="check(this)">c) all deadlocked processes must be aborted</div>
                 <div class="option" onclick="check(this)">d) inversion technique can be used</div>
             </div>
-            <button class="sf-btn" onclick="toggle(9)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-9" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-9">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -177,7 +177,7 @@
                 <div class="option" onclick="check(this)">d) must exceed the total number of resources available in the
                     system</div>
             </div>
-            <button class="sf-btn" onclick="toggle(10)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-10" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-10">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -191,7 +191,7 @@
                 <div class="option" onclick="check(this)">c) system calls</div>
                 <div class="option" onclick="check(this)">d) special programs</div>
             </div>
-            <button class="sf-btn" onclick="toggle(11)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-11" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-11">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -205,7 +205,7 @@
                 <div class="option" onclick="check(this)">c) not at all prone to deadlocks</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(12)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-12" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-12">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Multiple threads can compete for shared
@@ -221,7 +221,7 @@
                 <div class="option" onclick="check(this)">c) Hold and wait</div>
                 <div class="option" onclick="check(this)">d) All of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(13)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-13" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-13">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -238,7 +238,7 @@
                 </div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(14)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-14" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-14">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> If another process requests that
@@ -257,7 +257,7 @@
                     waiting to acquire additional resources</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(15)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-15" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-15">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -274,7 +274,7 @@
                     be given or not</div>
                 <div class="option" onclick="check(this)">d) to recover from a deadlock</div>
             </div>
-            <button class="sf-btn" onclick="toggle(16)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-16" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-16">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -288,7 +288,7 @@
                 <div class="option" onclick="check(this)">c) may exist</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(17)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-17" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-17">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> A printer cannot be simultaneously
@@ -303,7 +303,7 @@
                 <div class="option" onclick="check(this)">c) may be or may not be required</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(18)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-18" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-18">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> They do not require mutually exclusive
@@ -322,7 +322,7 @@
                 </div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(19)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-19" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-19">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> c – A process may request some
@@ -339,7 +339,7 @@
                 <div class="option" onclick="check(this)">c) Very high resource utilization</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(20)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-20" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-20">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -358,7 +358,7 @@
                 <div class="option" onclick="check(this)">d) then all resources currently being held are preempted
                 </div>
             </div>
-            <button class="sf-btn" onclick="toggle(21)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-21" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-21">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -376,7 +376,7 @@
                 </div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(22)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-22" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-22">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -391,7 +391,7 @@
                 <div class="option" onclick="check(this)">c) resources currently allocated to each process</div>
                 <div class="option" onclick="check(this)">d) future requests and releases of each process</div>
             </div>
-            <button class="sf-btn" onclick="toggle(23)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-23" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-23">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -407,7 +407,7 @@
                 <div class="option" onclick="check(this)">c) maximum</div>
                 <div class="option" onclick="check(this)">d) approximate</div>
             </div>
-            <button class="sf-btn" onclick="toggle(24)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-24" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-24">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -422,7 +422,7 @@
                 <div class="option" onclick="check(this)">c) operating system</div>
                 <div class="option" onclick="check(this)">d) resources</div>
             </div>
-            <button class="sf-btn" onclick="toggle(25)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-25" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-25">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Resource allocation states are used to
@@ -438,7 +438,7 @@
                 <div class="option" onclick="check(this)">c) the state keeps the system protected and safe</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(26)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-26" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-26">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -452,7 +452,7 @@
                 <div class="option" onclick="check(this)">c) safe sequence</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(27)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-27" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-27">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -466,7 +466,7 @@
                 <div class="option" onclick="check(this)">c) fatal</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(28)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-28" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-28">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -480,7 +480,7 @@
                 <div class="option" onclick="check(this)">c) all of the mentioned</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(29)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-29" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-29">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -496,7 +496,7 @@
                 </div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(30)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-30" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-30">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -511,7 +511,7 @@
                 <div class="option" onclick="check(this)">c) equal</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(31)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-31" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-31">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -525,7 +525,7 @@
                 <div class="option" onclick="check(this)">c) Allocation</div>
                 <div class="option" onclick="check(this)">d) All of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(32)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-32" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-32">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -539,7 +539,7 @@
                 <div class="option" onclick="check(this)">c) Max – Allocation</div>
                 <div class="option" onclick="check(this)">d) Allocation – Max</div>
             </div>
-            <button class="sf-btn" onclick="toggle(33)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-33" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-33">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -554,7 +554,7 @@
                 <div class="option" onclick="check(this)">c) all resources have a single 7 multiple instances</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(34)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-34" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-34">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -570,7 +570,7 @@
                 <div class="option" onclick="check(this)">c) Pi is waiting for Pj to leave the system</div>
                 <div class="option" onclick="check(this)">d) Pj is waiting for Pi to leave the system</div>
             </div>
-            <button class="sf-btn" onclick="toggle(35)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-35" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-35">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -584,7 +584,7 @@
                 <div class="option" onclick="check(this)">c) then the system is in a safe state</div>
                 <div class="option" onclick="check(this)">d) either deadlock exists or system is in a safe state</div>
             </div>
-            <button class="sf-btn" onclick="toggle(36)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-36" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-36">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -599,7 +599,7 @@
                 <div class="option" onclick="check(this)">c) rarely &amp; frequently</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(37)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-37" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-37">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -616,7 +616,7 @@
                 <div class="option" onclick="check(this)">c) considerable overhead in computation time</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(38)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-38" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-38">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -631,7 +631,7 @@
                 <div class="option" onclick="check(this)">c) stay still</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(39)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-39" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-39">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -646,7 +646,7 @@
                 <div class="option" onclick="check(this)">c) the specific process that caused the deadlock</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(40)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-40" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-40">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -662,7 +662,7 @@
                 <div class="option" onclick="check(this)">c) 4</div>
                 <div class="option" onclick="check(this)">d) 1</div>
             </div>
-            <button class="sf-btn" onclick="toggle(41)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-41" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-41">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -677,7 +677,7 @@
                 <div class="option" onclick="check(this)">c) has to occur</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(42)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-42" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-42">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -693,7 +693,7 @@
                 <div class="option" onclick="check(this)">c) has to occur</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(43)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-43" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-43">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -708,7 +708,7 @@
                 <div class="option" onclick="check(this)">c) preempt all resources from all processes</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(44)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-44" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-44">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -723,7 +723,7 @@
                     eliminated</div>
                 <div class="option" onclick="check(this)">d) All of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(45)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-45" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-45">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -738,7 +738,7 @@
                 <div class="option" onclick="check(this)">c) safety is not hampered</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(46)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-46" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-46">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -752,7 +752,7 @@
                 <div class="option" onclick="check(this)">c) how long the process has computed</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(47)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-47" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-47">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -768,7 +768,7 @@
                     during its execution</div>
                 <div class="option" onclick="check(this)">d) All of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(48)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-48" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-48">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -783,7 +783,7 @@
                 <div class="option" onclick="check(this)">c) terminated</div>
                 <div class="option" onclick="check(this)">d) queued</div>
             </div>
-            <button class="sf-btn" onclick="toggle(49)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-49" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-49">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -798,7 +798,7 @@
                 <div class="option" onclick="check(this)">c) queue the process</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(50)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-50" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-50">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -813,7 +813,7 @@
                 <div class="option" onclick="check(this)">c) aging</div>
                 <div class="option" onclick="check(this)">d) starvation</div>
             </div>
-            <button class="sf-btn" onclick="toggle(51)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-51" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-51">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -829,7 +829,7 @@
                 <div class="option" onclick="check(this)">c) resource preemption be done instead</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(52)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-52" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-52">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>

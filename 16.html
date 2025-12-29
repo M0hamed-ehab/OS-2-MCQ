@@ -11,7 +11,7 @@
     <header>
         <div style="font-weight: bold;">Sanfoundry Quiz Engine</div>
         <div class="stats">
-            Score: <span id="score">0</span> / <span id="total">27</span>
+            Score: <span id="score">0</span> / <span id="total">73</span>
         </div>
     </header>
     <div class="page-header">
@@ -27,7 +27,7 @@
                 <div class="option" onclick="check(this)">c) Wiping of information</div>
                 <div class="option" onclick="check(this)">d) All of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(0)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-0" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-0">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -41,7 +41,7 @@
                 <div class="option" onclick="check(this)">c) File corrupting</div>
                 <div class="option" onclick="check(this)">d) File integrity</div>
             </div>
-            <button class="sf-btn" onclick="toggle(1)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-1" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-1">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Sharing and associated permissions are
@@ -56,7 +56,7 @@
                 <div class="option" onclick="check(this)">c) Stop</div>
                 <div class="option" onclick="check(this)">d) Read</div>
             </div>
-            <button class="sf-btn" onclick="toggle(2)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-2" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-2">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -70,7 +70,7 @@
                 <div class="option" onclick="check(this)">c) Grant limited permission to specified account</div>
                 <div class="option" onclick="check(this)">d) Give both read and write permission but not execute</div>
             </div>
-            <button class="sf-btn" onclick="toggle(3)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-3" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-3">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Limited access is a key method to
@@ -85,7 +85,7 @@
                 <div class="option" onclick="check(this)">c) Granting privileges on a per host basis</div>
                 <div class="option" onclick="check(this)">d) Using telnet and FTP for remote access</div>
             </div>
-            <button class="sf-btn" onclick="toggle(4)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-4" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-4">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Telnet and FTP are not encrypted and
@@ -100,7 +100,7 @@
                 <div class="option" onclick="check(this)">c) retina pattern</div>
                 <div class="option" onclick="check(this)">d) Password</div>
             </div>
-            <button class="sf-btn" onclick="toggle(5)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-5" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-5">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Passwords can be compromised more
@@ -115,7 +115,7 @@
                 <div class="option" onclick="check(this)">c) P@assw0rd</div>
                 <div class="option" onclick="check(this)">d) !augustdelhi</div>
             </div>
-            <button class="sf-btn" onclick="toggle(6)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-6" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-6">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> It has a combination of Alphabet both
@@ -131,7 +131,7 @@
                 <div class="option" onclick="check(this)">c) It is different for every access</div>
                 <div class="option" onclick="check(this)">d) It is a complex encrypted password</div>
             </div>
-            <button class="sf-btn" onclick="toggle(7)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-7" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-7">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> One time password is safe since it is
@@ -146,7 +146,7 @@
                 <div class="option" onclick="check(this)">c) Passwords</div>
                 <div class="option" onclick="check(this)">d) Security Keys</div>
             </div>
-            <button class="sf-btn" onclick="toggle(8)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-8" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-8">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -163,7 +163,7 @@
                     network devices</div>
                 <div class="option" onclick="check(this)">d) It’s a strong File access system</div>
             </div>
-            <button class="sf-btn" onclick="toggle(9)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-9" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-9">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -177,7 +177,7 @@
                 <div class="option" onclick="check(this)">c) Authorization &amp; Authentication are same</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(10)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-10" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-10">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -191,7 +191,7 @@
                 <div class="option" onclick="check(this)">c) Multilayered protection for securing resources</div>
                 <div class="option" onclick="check(this)">d) Deals with privileges and rights</div>
             </div>
-            <button class="sf-btn" onclick="toggle(11)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-11" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-11">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -205,7 +205,7 @@
                 <div class="option" onclick="check(this)">c) Devices being accessed forces the user</div>
                 <div class="option" onclick="check(this)">d) Account administrator</div>
             </div>
-            <button class="sf-btn" onclick="toggle(12)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-12" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-12">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Its administrator’s job to ensure that
@@ -222,7 +222,7 @@
                 <div class="option" onclick="check(this)">c) Password encryption</div>
                 <div class="option" onclick="check(this)">d) Having change password every 2 years</div>
             </div>
-            <button class="sf-btn" onclick="toggle(13)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-13" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-13">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Old passwords are more vulnerable to
@@ -241,7 +241,7 @@
                 <div class="option" onclick="check(this)">d) This violation involves unauthorized use of resources
                 </div>
             </div>
-            <button class="sf-btn" onclick="toggle(14)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-14" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-14">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -259,7 +259,7 @@
                 <div class="option" onclick="check(this)">d) This violation involves unauthorized use of resources
                 </div>
             </div>
-            <button class="sf-btn" onclick="toggle(15)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-15" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-15">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -277,7 +277,7 @@
                 <div class="option" onclick="check(this)">d) This violation involves unauthorized use of resources
                 </div>
             </div>
-            <button class="sf-btn" onclick="toggle(16)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-16" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-16">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -295,7 +295,7 @@
                 <div class="option" onclick="check(this)">d) This violation involves unauthorized use of resources
                 </div>
             </div>
-            <button class="sf-btn" onclick="toggle(17)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-17" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-17">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -309,7 +309,7 @@
                 <div class="option" onclick="check(this)">c) It is a rogue program which tricks users</div>
                 <div class="option" onclick="check(this)">d) It’s a brute force attack algorithm</div>
             </div>
-            <button class="sf-btn" onclick="toggle(18)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-18" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-18">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -323,7 +323,7 @@
                 <div class="option" onclick="check(this)">c) It is a Trojan horse</div>
                 <div class="option" onclick="check(this)">d) It is a virus which traps and locks user terminal</div>
             </div>
-            <button class="sf-btn" onclick="toggle(19)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-19" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-19">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -337,7 +337,7 @@
                 <div class="option" onclick="check(this)">c) Spawn Process</div>
                 <div class="option" onclick="check(this)">d) VAX process</div>
             </div>
-            <button class="sf-btn" onclick="toggle(20)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-20" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-20">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -351,7 +351,7 @@
                 <div class="option" onclick="check(this)">c) Virus is a code embedded in a legitimate program</div>
                 <div class="option" onclick="check(this)">d) Virus cannot be detected</div>
             </div>
-            <button class="sf-btn" onclick="toggle(21)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-21" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-21">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Virus can be detected by having an
@@ -367,7 +367,7 @@
                 <div class="option" onclick="check(this)">c) When attack is of fraudulent repeat of a valid data</div>
                 <div class="option" onclick="check(this)">d) When attack gains access to remote systems</div>
             </div>
-            <button class="sf-btn" onclick="toggle(22)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-22" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-22">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -382,7 +382,7 @@
                 <div class="option" onclick="check(this)">c) Mark zuckerberg</div>
                 <div class="option" onclick="check(this)">d) Bill Gates</div>
             </div>
-            <button class="sf-btn" onclick="toggle(23)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-23" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-23">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -398,7 +398,7 @@
                     by brute force</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(24)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-24" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-24">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -412,7 +412,7 @@
                 <div class="option" onclick="check(this)">c) UDP scanning</div>
                 <div class="option" onclick="check(this)">d) SYSTEM Scanning</div>
             </div>
-            <button class="sf-btn" onclick="toggle(25)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-25" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-25">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -426,7 +426,7 @@
                 <div class="option" onclick="check(this)">c) IGMP scan</div>
                 <div class="option" onclick="check(this)">d) FIN scanning</div>
             </div>
-            <button class="sf-btn" onclick="toggle(26)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-26" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-26">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -442,7 +442,7 @@
                     systems</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(27)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-27" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-27">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -458,7 +458,7 @@
                     unavailable</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(28)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-28" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-28">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -473,7 +473,7 @@
                 <div class="option" onclick="check(this)">c) DOS attack has to be stopped at network level</div>
                 <div class="option" onclick="check(this)">d) Such attack can last for hours</div>
             </div>
-            <button class="sf-btn" onclick="toggle(29)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-29" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-29">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -487,7 +487,7 @@
                 <div class="option" onclick="check(this)">c) Audit log periodically</div>
                 <div class="option" onclick="check(this)">d) Scan for unauthorized programs in system directories</div>
             </div>
-            <button class="sf-btn" onclick="toggle(30)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-30" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-30">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> RAM has no effect on security of a
@@ -503,7 +503,7 @@
                 <div class="option" onclick="check(this)">d) Deny users access to websites which can potentially cause
                     security leak</div>
             </div>
-            <button class="sf-btn" onclick="toggle(31)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-31" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-31">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Firewall create a protective barrier to
@@ -520,7 +520,7 @@
                 <div class="option" onclick="check(this)">c) Create a Demilitarized zone</div>
                 <div class="option" onclick="check(this)">d) Create two DMZ zones with one untrusted domain</div>
             </div>
-            <button class="sf-btn" onclick="toggle(32)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-32" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-32">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> All live servers or workstations are
@@ -535,7 +535,7 @@
                 <div class="option" onclick="check(this)">c) Internet to company computer</div>
                 <div class="option" onclick="check(this)">d) Company computer to internet</div>
             </div>
-            <button class="sf-btn" onclick="toggle(33)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-33" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-33">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Connection from internet is never
@@ -550,7 +550,7 @@
                 <div class="option" onclick="check(this)">c) It is used to secure UNIX system</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(34)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-34" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-34">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -564,7 +564,7 @@
                 <div class="option" onclick="check(this)">c) They modify themselves</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(35)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-35" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-35">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -578,7 +578,7 @@
                 <div class="option" onclick="check(this)">c) It can take high priority to increase scanning speed</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(36)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-36" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-36">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -594,7 +594,7 @@
                 <div class="option" onclick="check(this)">c) It is a special mode of antivirus</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(37)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-37" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-37">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -608,7 +608,7 @@
                 <div class="option" onclick="check(this)">c) Open and execute programs in presence of antivirus</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(38)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-38" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-38">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Disgruntled employees have in past
@@ -623,7 +623,7 @@
                 <div class="option" onclick="check(this)">c) Race conditions</div>
                 <div class="option" onclick="check(this)">d) All of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(39)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-39" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-39">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -637,7 +637,7 @@
                 <div class="option" onclick="check(this)">c) Alert Database</div>
                 <div class="option" onclick="check(this)">d) All of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(40)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-40" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-40">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -651,7 +651,7 @@
                 <div class="option" onclick="check(this)">c) stack based</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(41)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-41" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-41">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -665,7 +665,7 @@
                 <div class="option" onclick="check(this)">c) Network &amp; Zone based</div>
                 <div class="option" onclick="check(this)">d) Level based</div>
             </div>
-            <button class="sf-btn" onclick="toggle(42)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-42" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-42">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -681,7 +681,7 @@
                     intrusion activity</div>
                 <div class="option" onclick="check(this)">d) It detects based on signature</div>
             </div>
-            <button class="sf-btn" onclick="toggle(43)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-43" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-43">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -695,7 +695,7 @@
                 <div class="option" onclick="check(this)">c) It doesn’t detect novel attacks</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(44)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-44" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-44">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -712,7 +712,7 @@
                 <div class="option" onclick="check(this)">d) Anything distinct from the noise is assumed to be
                     intrusion activity</div>
             </div>
-            <button class="sf-btn" onclick="toggle(45)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-45" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-45">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -727,7 +727,7 @@
                     be detected</div>
                 <div class="option" onclick="check(this)">d) All of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(46)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-46" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-46">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -743,7 +743,7 @@
                 <div class="option" onclick="check(this)">c) Logs are analysed to detect tails of intrusion</div>
                 <div class="option" onclick="check(this)">d) All of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(47)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-47" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-47">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -758,7 +758,7 @@
                 <div class="option" onclick="check(this)">c) They are very fast to detect</div>
                 <div class="option" onclick="check(this)">d) They have to be programmed for new patterns</div>
             </div>
-            <button class="sf-btn" onclick="toggle(48)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-48" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-48">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -772,7 +772,7 @@
                 <div class="option" onclick="check(this)">c) No additional hardware required</div>
                 <div class="option" onclick="check(this)">d) All of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(49)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-49" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-49">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -790,7 +790,7 @@
                 <div class="option" onclick="check(this)">d) It models the normal usage of network as a noise
                     characterization</div>
             </div>
-            <button class="sf-btn" onclick="toggle(50)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-50" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-50">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -807,7 +807,7 @@
                 <div class="option" onclick="check(this)">d) It models the normal usage of network as a noise
                     characterization</div>
             </div>
-            <button class="sf-btn" onclick="toggle(51)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-51" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-51">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -821,7 +821,7 @@
                 <div class="option" onclick="check(this)">c) Real time detection and response</div>
                 <div class="option" onclick="check(this)">d) All of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(52)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-52" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-52">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -835,7 +835,7 @@
                 <div class="option" onclick="check(this)">c) public key-encryption</div>
                 <div class="option" onclick="check(this)">d) symmetric key</div>
             </div>
-            <button class="sf-btn" onclick="toggle(53)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-53" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-53">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Pre Shared key can be compromised and
@@ -852,7 +852,7 @@
                 <div class="option" onclick="check(this)">c) It is used to ensure data integrity</div>
                 <div class="option" onclick="check(this)">d) It is used to ensure data corruption doesn’t happens</div>
             </div>
-            <button class="sf-btn" onclick="toggle(54)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-54" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-54">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> Encryption doesn’t have error
@@ -867,7 +867,7 @@
                 <div class="option" onclick="check(this)">c) Data is logically ‘XORed’ with previous block</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(55)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-55" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-55">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -881,7 +881,7 @@
                 <div class="option" onclick="check(this)">c) Triple DES</div>
                 <div class="option" onclick="check(this)">d) DES</div>
             </div>
-            <button class="sf-btn" onclick="toggle(56)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-56" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-56">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -895,7 +895,7 @@
                 <div class="option" onclick="check(this)">c) RC4</div>
                 <div class="option" onclick="check(this)">d) TBONE</div>
             </div>
-            <button class="sf-btn" onclick="toggle(57)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-57" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-57">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -909,7 +909,7 @@
                 <div class="option" onclick="check(this)">c) It creates a encrypted block of data</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(58)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-58" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-58">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -923,7 +923,7 @@
                 <div class="option" onclick="check(this)">c) 160</div>
                 <div class="option" onclick="check(this)">d) 112</div>
             </div>
-            <button class="sf-btn" onclick="toggle(59)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-59" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-59">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -937,7 +937,7 @@
                 <div class="option" onclick="check(this)">c) 150</div>
                 <div class="option" onclick="check(this)">d) 112</div>
             </div>
-            <button class="sf-btn" onclick="toggle(60)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-60" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-60">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -951,7 +951,7 @@
                 <div class="option" onclick="check(this)">c) DAS</div>
                 <div class="option" onclick="check(this)">d) Digital-signature</div>
             </div>
-            <button class="sf-btn" onclick="toggle(61)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-61" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-61">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -966,7 +966,7 @@
                 <div class="option" onclick="check(this)">c) All of the mentioned</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(62)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-62" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-62">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.</div>
@@ -980,7 +980,7 @@
                 <div class="option" onclick="check(this)">c) RAM</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(63)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-63" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-63">c</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -994,7 +994,7 @@
                 <div class="option" onclick="check(this)">c) wide area network</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(64)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-64" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-64">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -1009,7 +1009,7 @@
                 <div class="option" onclick="check(this)">c) arm time</div>
                 <div class="option" onclick="check(this)">d) sector time</div>
             </div>
-            <button class="sf-btn" onclick="toggle(65)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-65" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-65">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -1024,7 +1024,7 @@
                 <div class="option" onclick="check(this)">c) SCAN scheduling</div>
                 <div class="option" onclick="check(this)">d) LOOK scheduling</div>
             </div>
-            <button class="sf-btn" onclick="toggle(66)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-66" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-66">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -1038,7 +1038,7 @@
                 <div class="option" onclick="check(this)">c) bad-block recovery</div>
                 <div class="option" onclick="check(this)">d) all of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(67)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-67" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-67">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -1052,7 +1052,7 @@
                 <div class="option" onclick="check(this)">c) Cache</div>
                 <div class="option" onclick="check(this)">d) None of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(68)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-68" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-68">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -1066,7 +1066,7 @@
                 <div class="option" onclick="check(this)">c) both disk arrays with striping and disk mirroring</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(69)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-69" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-69">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> A variety of disk-organization
@@ -1082,7 +1082,7 @@
                 <div class="option" onclick="check(this)">c) total failure</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(70)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-70" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-70">d</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -1096,7 +1096,7 @@
                 <div class="option" onclick="check(this)">c) first pair of physical block is examined</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(71)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-71" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-71">a</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -1111,7 +1111,7 @@
                 <div class="option" onclick="check(this)">c) bad block does not contain any data</div>
                 <div class="option" onclick="check(this)">d) none of the mentioned</div>
             </div>
-            <button class="sf-btn" onclick="toggle(72)">View Answer</button>
+            <button class="sf-btn" onclick="toggle(this)">View Answer</button>
             <div id="pan-72" class="ans-panel">
                 <p><span class="label">Answer:</span> <span id="ans-text-72">b</span></p>
                 <div class="explanation"><span class="label">Explanation:</span> None.<br></div>
@@ -1119,6 +1119,7 @@
         </div>
     </div>
     <script src="script.js"></script>
+
 </body>
 
 </html>
