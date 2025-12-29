@@ -110,3 +110,14 @@ header {
     font-weight: bold;
     font-size: 14px;
 }
+
+#backBtn {
+
+    background-color: white;
+    color: #006699;
+    border: none;
+    padding: 6px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
