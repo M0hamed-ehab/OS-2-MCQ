@@ -37,3 +37,32 @@ window.check = function (optionEl) {
 
     panel.style.display = 'block';
 };
+
+
+
+
+
+
+function show(fileName, afterEl) {
+    if (!afterEl) {
+        // If afterEl not provided, use the parent of the script calling show()
+        afterEl = document.currentScript.parentElement;
+    }
+
+    fetch(fileName)
+        .then(res => {
+            if (!res.ok) throw new Error('Failed to fetch ' + fileName);
+            return res.text();
+        })
+        .then(htmlText => {
+            const doc = new DOMParser().parseFromString(htmlText, 'text/html');
+            const containerDiv = doc.querySelector('.container');
+            if (containerDiv) {
+                afterEl.insertAdjacentElement('afterend', containerDiv.cloneNode(true));
+            } else {
+                console.warn('No .container found in ' + fileName);
+            }
+        })
+        .catch(err => console.error(err));
+}
+
