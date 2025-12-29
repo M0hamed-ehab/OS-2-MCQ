@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>10. SecurityEXTRACT FULL SECTION</title>
+    <style>
+        body {
+            font-family: "Open Sans", Arial, sans-serif;
+            background: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #006699;
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-header {
+            background: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .page-header h1 {
+            margin: 0;
+            font-size: 22px;
+            color: #006699;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px 50px 20px;
+        }
+
+        .q-block {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .q-text {
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .option {
+            display: block;
+            padding: 8px 12px;
+            margin: 5px 0;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .option:hover {
+            background: #f0f7fb;
+            border-color: #006699;
+        }
+
+        .correct {
+            background: #d4edda !important;
+            border-color: #28a745 !important;
+            color: #155724;
+            font-weight: bold;
+        }
+
+        .incorrect {
+            background: #f8d7da !important;
+            border-color: #dc3545 !important;
+            color: #721c24;
+        }
+
+        .sf-btn {
+            background-color: #eeeeee;
+            border: 1px solid #cccccc;
+            color: #333;
+            padding: 5px 12px;
+            font-size: 13px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .ans-panel {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px dashed #cccccc;
+        }
+
+        .label {
+            color: #cc0000;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .stats {
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="font-weight: bold;">Sanfoundry Quiz Engine</div>
+        <div class="stats">
+            Score: <span id="score">0</span> / <span id="total">0</span>
+        </div>
+    </header>
+    <div class="page-header">
+        <h1>16. Security</h1>
+    </div>
+    <div class="container">
+
+        <div class="q-block">
+            <div class="q-text">1. Which of the following are forms of malicious attack?</div>
+            <div id="opts-0">
+                <div class="option" onclick="check(0, 0)">a) Theft of information</div>
+                <div class="option" onclick="check(0, 1)">b) Modification of data</div>
+                <div class="option" onclick="check(0, 2)">c) Wiping of information</div>
+                <div class="option" onclick="check(0, 3)">d) All of the mentioned</div>
+                <div class="option" onclick="check(0, 4)"><span class="collapseomatic " id="id694d9996f010e" tabindex=""
+                        title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(0)">View Answer</button>
+            <div id="pan-0" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-0">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">2. What are the common security threats?</div>
+            <div id="opts-1">
+                <div class="option" onclick="check(1, 0)">a) File Shredding</div>
+                <div class="option" onclick="check(1, 1)">b) File sharing and permission</div>
+                <div class="option" onclick="check(1, 2)">c) File corrupting</div>
+                <div class="option" onclick="check(1, 3)">d) File integrity</div>
+                <div class="option" onclick="check(1, 4)"><span class="collapseomatic " id="id694d9996f0140" tabindex=""
+                        title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(1)">View Answer</button>
+            <div id="pan-1" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-1">Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: Sharing and associated
+                    permissions are usual exploits which can compromise the system.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">3. From the following, which is not a common file permission?</div>
+            <div id="opts-2">
+                <div class="option" onclick="check(2, 0)">a) Write</div>
+                <div class="option" onclick="check(2, 1)">b) Execute</div>
+                <div class="option" onclick="check(2, 2)">c) Stop</div>
+                <div class="option" onclick="check(2, 3)">d) Read</div>
+                <div class="option" onclick="check(2, 4)"><span class="collapseomatic " id="id694d9996f0154" tabindex=""
+                        title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(2)">View Answer</button>
+            <div id="pan-2" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-2">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">4. Which of the following is a good practice?</div>
+            <div id="opts-3">
+                <div class="option" onclick="check(3, 0)">a) Give full permission for remote transferring</div>
+                <div class="option" onclick="check(3, 1)">b) Grant read only permission</div>
+                <div class="option" onclick="check(3, 2)">c) Grant limited permission to specified account</div>
+                <div class="option" onclick="check(3, 3)">d) Give both read and write permission but not execute</div>
+                <div class="option" onclick="check(3, 4)"><span class="collapseomatic " id="id694d9996f0164" tabindex=""
+                        title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(3)">View Answer</button>
+            <div id="pan-3" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-3">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: Limited access is a key
+                    method to circumvent unauthorized access and exploits.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">5. What is not a good practice for user administration?</div>
+            <div id="opts-4">
+                <div class="option" onclick="check(4, 0)">a) Isolating a system after a compromise</div>
+                <div class="option" onclick="check(4, 1)">b) Perform random auditing procedures</div>
+                <div class="option" onclick="check(4, 2)">c) Granting privileges on a per host basis</div>
+                <div class="option" onclick="check(4, 3)">d) Using telnet and FTP for remote access</div>
+                <div class="option" onclick="check(4, 4)"><span class="collapseomatic " id="id694d9996f0172" tabindex=""
+                        title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(4)">View Answer</button>
+            <div id="pan-4" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-4">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: Telnet and FTP are not
+                    encrypted and can be compromised.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">6. Which of the following is the least secure method of authentication?</div>
+            <div id="opts-5">
+                <div class="option" onclick="check(5, 0)">a) Key card</div>
+                <div class="option" onclick="check(5, 1)">b) fingerprint</div>
+                <div class="option" onclick="check(5, 2)">c) retina pattern</div>
+                <div class="option" onclick="check(5, 3)">d) Password</div>
+                <div class="option" onclick="check(5, 4)"><span class="collapseomatic " id="id694d9996f0180" tabindex=""
+                        title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(5)">View Answer</button>
+            <div id="pan-5" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-5">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: Passwords can be
+                    compromised more easily than to replicate a physical thing like key card, fingerprint or retina.
+                </div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">7. Which of the following is a strong password?</div>
+            <div id="opts-6">
+                <div class="option" onclick="check(6, 0)">a) 19thAugust88</div>
+                <div class="option" onclick="check(6, 1)">b) Delhi88</div>
+                <div class="option" onclick="check(6, 2)">c) P@assw0rd</div>
+                <div class="option" onclick="check(6, 3)">d) !augustdelhi</div>
+                <div class="option" onclick="check(6, 4)"><span class="collapseomatic " id="id694d9996f018e" tabindex=""
+                        title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(6)">View Answer</button>
+            <div id="pan-6" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-6">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: It has a combination of
+                    Alphabet both capital and small along with number and special character. Thus always use complex
+                    password with a combination of all these.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">8. Why is one time password safe?</div>
+            <div id="opts-7">
+                <div class="option" onclick="check(7, 0)">a) It is easy to generated</div>
+                <div class="option" onclick="check(7, 1)">b) It cannot be shared</div>
+                <div class="option" onclick="check(7, 2)">c) It is different for every access</div>
+                <div class="option" onclick="check(7, 3)">d) It is a complex encrypted password</div>
+                <div class="option" onclick="check(7, 4)"><span class="collapseomatic " id="id694d9996f019c" tabindex=""
+                        title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(7)">View Answer</button>
+            <div id="pan-7" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-7">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: One time password is safe
+                    since it is generated per access and thus cannot be brute forced or deduced.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">9. What does Light Directory Access Protocol (LDAP) doesn’t store?</div>
+            <div id="opts-8">
+                <div class="option" onclick="check(8, 0)">a) Users</div>
+                <div class="option" onclick="check(8, 1)">b) Address</div>
+                <div class="option" onclick="check(8, 2)">c) Passwords</div>
+                <div class="option" onclick="check(8, 3)">d) Security Keys</div>
+                <div class="option" onclick="check(8, 4)"><span class="collapseomatic " id="id694d9996f01a9" tabindex=""
+                        title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(8)">View Answer</button>
+            <div id="pan-8" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-8">Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">10. What is characteristic of RADIUS system?</div>
+            <div id="opts-9">
+                <div class="option" onclick="check(9, 0)">a) It is essential for centralized encryption and
+                    authentication</div>
+                <div class="option" onclick="check(9, 1)">b) It works on Network layer to deny access to unauthorized
+                    people</div>
+                <div class="option" onclick="check(9, 2)">c) It provides centralized authentication mechanism via
+                    network devices</div>
+                <div class="option" onclick="check(9, 3)">d) It’s a strong File access system</div>
+                <div class="option" onclick="check(9, 4)"><span class="collapseomatic " id="id694d9996f01b7" tabindex=""
+                        title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(9)">View Answer</button>
+            <div id="pan-9" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-9">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">11. Which happens first authorization or authentication?</div>
+            <div id="opts-10">
+                <div class="option" onclick="check(10, 0)">a) Authorization</div>
+                <div class="option" onclick="check(10, 1)">b) Authentication</div>
+                <div class="option" onclick="check(10, 2)">c) Authorization &amp; Authentication are same</div>
+                <div class="option" onclick="check(10, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(10, 4)"><span class="collapseomatic " id="id694d9996f01c4"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(10)">View Answer</button>
+            <div id="pan-10" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-10">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">12. What are the characteristics of Authorization?</div>
+            <div id="opts-11">
+                <div class="option" onclick="check(11, 0)">a) RADIUS and RSA</div>
+                <div class="option" onclick="check(11, 1)">b) 3 way handshaking with syn and fin</div>
+                <div class="option" onclick="check(11, 2)">c) Multilayered protection for securing resources</div>
+                <div class="option" onclick="check(11, 3)">d) Deals with privileges and rights</div>
+                <div class="option" onclick="check(11, 4)"><span class="collapseomatic " id="id694d9996f01d1"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(11)">View Answer</button>
+            <div id="pan-11" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-11">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">13. What forces the user to change password at first login?</div>
+            <div id="opts-12">
+                <div class="option" onclick="check(12, 0)">a) Default behavior of OS</div>
+                <div class="option" onclick="check(12, 1)">b) Part of AES encryption practice</div>
+                <div class="option" onclick="check(12, 2)">c) Devices being accessed forces the user</div>
+                <div class="option" onclick="check(12, 3)">d) Account administrator</div>
+                <div class="option" onclick="check(12, 4)"><span class="collapseomatic " id="id694d9996f01df"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(12)">View Answer</button>
+            <div id="pan-12" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-12">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: Its administrator’s job to
+                    ensure that password of the user remains private and is known only to user. But while making a new
+                    user account he assigns a random general password to give it to user. Thus even administrator cannot
+                    access a particular users account.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">14. What is not a best practice for password policy?</div>
+            <div id="opts-13">
+                <div class="option" onclick="check(13, 0)">a) Deciding maximum age of password</div>
+                <div class="option" onclick="check(13, 1)">b) Restriction on password reuse and history</div>
+                <div class="option" onclick="check(13, 2)">c) Password encryption</div>
+                <div class="option" onclick="check(13, 3)">d) Having change password every 2 years</div>
+                <div class="option" onclick="check(13, 4)"><span class="collapseomatic " id="id694d9996f01ed"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(13)">View Answer</button>
+            <div id="pan-13" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-13">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: Old passwords are more
+                    vulnerable to being misplaced or compromised. Passwords should be changed periodically to enhance
+                    security.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">15. What is the breach of integrity?</div>
+            <div id="opts-14">
+                <div class="option" onclick="check(14, 0)">a) This type of violation involves unauthorized reading of
+                    data</div>
+                <div class="option" onclick="check(14, 1)">b) This violation involves unauthorized modification of data
+                </div>
+                <div class="option" onclick="check(14, 2)">c) This violation involves unauthorized destruction of data
+                </div>
+                <div class="option" onclick="check(14, 3)">d) This violation involves unauthorized use of resources
+                </div>
+                <div class="option" onclick="check(14, 4)"><span class="collapseomatic " id="id6947c0220cce6"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(14)">View Answer</button>
+            <div id="pan-14" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-14">Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">16. What is breach of confidentiality?</div>
+            <div id="opts-15">
+                <div class="option" onclick="check(15, 0)">a) This type of violation involves unauthorized reading of
+                    data</div>
+                <div class="option" onclick="check(15, 1)">b) This violation involves unauthorized modification of data
+                </div>
+                <div class="option" onclick="check(15, 2)">c) This violation involves unauthorized destruction of data
+                </div>
+                <div class="option" onclick="check(15, 3)">d) This violation involves unauthorized use of resources
+                </div>
+                <div class="option" onclick="check(15, 4)"><span class="collapseomatic " id="id6947c0220cd08"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(15)">View Answer</button>
+            <div id="pan-15" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-15">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">17. What is theft of service?</div>
+            <div id="opts-16">
+                <div class="option" onclick="check(16, 0)">a) This type of violation involves unauthorized reading of
+                    data</div>
+                <div class="option" onclick="check(16, 1)">b) This violation involves unauthorized modification of data
+                </div>
+                <div class="option" onclick="check(16, 2)">c) This violation involves unauthorized destruction of data
+                </div>
+                <div class="option" onclick="check(16, 3)">d) This violation involves unauthorized use of resources
+                </div>
+                <div class="option" onclick="check(16, 4)"><span class="collapseomatic " id="id6947c0220cd15"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(16)">View Answer</button>
+            <div id="pan-16" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-16">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">18. What is breach of availability?</div>
+            <div id="opts-17">
+                <div class="option" onclick="check(17, 0)">a) This type of violation involves unauthorized reading of
+                    data</div>
+                <div class="option" onclick="check(17, 1)">b) This violation involves unauthorized modification of data
+                </div>
+                <div class="option" onclick="check(17, 2)">c) This violation involves unauthorized destruction of data
+                </div>
+                <div class="option" onclick="check(17, 3)">d) This violation involves unauthorized use of resources
+                </div>
+                <div class="option" onclick="check(17, 4)"><span class="collapseomatic " id="id6947c0220cd1f"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(17)">View Answer</button>
+            <div id="pan-17" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-17">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">19. What is Trojan horse?</div>
+            <div id="opts-18">
+                <div class="option" onclick="check(18, 0)">a) It is a useful way to encrypt password</div>
+                <div class="option" onclick="check(18, 1)">b) It is a user which steals valuable information</div>
+                <div class="option" onclick="check(18, 2)">c) It is a rogue program which tricks users</div>
+                <div class="option" onclick="check(18, 3)">d) It’s a brute force attack algorithm</div>
+                <div class="option" onclick="check(18, 4)"><span class="collapseomatic " id="id6947c0220cd28"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(18)">View Answer</button>
+            <div id="pan-18" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-18">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">20. What is trap door?</div>
+            <div id="opts-19">
+                <div class="option" onclick="check(19, 0)">a) IT is trap door in WarGames</div>
+                <div class="option" onclick="check(19, 1)">b) It is a hole in software left by designer</div>
+                <div class="option" onclick="check(19, 2)">c) It is a Trojan horse</div>
+                <div class="option" onclick="check(19, 3)">d) It is a virus which traps and locks user terminal</div>
+                <div class="option" onclick="check(19, 4)"><span class="collapseomatic " id="id6947c0220cd30"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(19)">View Answer</button>
+            <div id="pan-19" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-19">Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">21. Which mechanism is used by worm process?</div>
+            <div id="opts-20">
+                <div class="option" onclick="check(20, 0)">a) Trap door</div>
+                <div class="option" onclick="check(20, 1)">b) Fake process</div>
+                <div class="option" onclick="check(20, 2)">c) Spawn Process</div>
+                <div class="option" onclick="check(20, 3)">d) VAX process</div>
+                <div class="option" onclick="check(20, 4)"><span class="collapseomatic " id="id6947c0220cd38"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(20)">View Answer</button>
+            <div id="pan-20" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-20">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">22. Which of the following is not a characteristic of a virus?</div>
+            <div id="opts-21">
+                <div class="option" onclick="check(21, 0)">a) Virus destroy and modify user data</div>
+                <div class="option" onclick="check(21, 1)">b) Virus is a standalone program</div>
+                <div class="option" onclick="check(21, 2)">c) Virus is a code embedded in a legitimate program</div>
+                <div class="option" onclick="check(21, 3)">d) Virus cannot be detected</div>
+                <div class="option" onclick="check(21, 4)"><span class="collapseomatic " id="id6947c0220cd41"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(21)">View Answer</button>
+            <div id="pan-21" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-21">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: Virus can be detected by
+                    having an antivirus program.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">23. What is known as masquerading?</div>
+            <div id="opts-22">
+                <div class="option" onclick="check(22, 0)">a) When one participant in communication pretends to be
+                    someone else</div>
+                <div class="option" onclick="check(22, 1)">b) When attacker modifies data in communication</div>
+                <div class="option" onclick="check(22, 2)">c) When attack is of fraudulent repeat of a valid data</div>
+                <div class="option" onclick="check(22, 3)">d) When attack gains access to remote systems</div>
+                <div class="option" onclick="check(22, 4)"><span class="collapseomatic " id="id6947c0220cd49"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(22)">View Answer</button>
+            <div id="pan-22" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-22">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">24. Who unleashed famous worm attack in 1988 which effected UNIX systems and caused
+                losses in millions?</div>
+            <div id="opts-23">
+                <div class="option" onclick="check(23, 0)">a) Robert Morris</div>
+                <div class="option" onclick="check(23, 1)">b) Bob Milano</div>
+                <div class="option" onclick="check(23, 2)">c) Mark zuckerberg</div>
+                <div class="option" onclick="check(23, 3)">d) Bill Gates</div>
+                <div class="option" onclick="check(23, 4)"><span class="collapseomatic " id="id6947c0220cd52"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(23)">View Answer</button>
+            <div id="pan-23" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-23">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">25. What is port scanning?</div>
+            <div id="opts-24">
+                <div class="option" onclick="check(24, 0)">a) It is a software used to scan system for attack</div>
+                <div class="option" onclick="check(24, 1)">b) It is a software application designed to probe a server or
+                    host for open ports</div>
+                <div class="option" onclick="check(24, 2)">c) It is software used to scan system for introducing attacks
+                    by brute force</div>
+                <div class="option" onclick="check(24, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(24, 4)"><span class="collapseomatic " id="id6947c0220cd5a"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(24)">View Answer</button>
+            <div id="pan-24" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-24">Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">26. Which is not a port scan type?</div>
+            <div id="opts-25">
+                <div class="option" onclick="check(25, 0)">a) TCP scanning</div>
+                <div class="option" onclick="check(25, 1)">b) SYN scanning</div>
+                <div class="option" onclick="check(25, 2)">c) UDP scanning</div>
+                <div class="option" onclick="check(25, 3)">d) SYSTEM Scanning</div>
+                <div class="option" onclick="check(25, 4)"><span class="collapseomatic " id="id6947c0220cd62"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(25)">View Answer</button>
+            <div id="pan-25" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-25">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">27. Which is not a valid port scan type?</div>
+            <div id="opts-26">
+                <div class="option" onclick="check(26, 0)">a) ACK scanning</div>
+                <div class="option" onclick="check(26, 1)">b) Window scanning</div>
+                <div class="option" onclick="check(26, 2)">c) IGMP scan</div>
+                <div class="option" onclick="check(26, 3)">d) FIN scanning</div>
+                <div class="option" onclick="check(26, 4)"><span class="collapseomatic " id="id6947c0220cd69"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(26)">View Answer</button>
+            <div id="pan-26" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-26">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">28. What are zombie systems?</div>
+            <div id="opts-27">
+                <div class="option" onclick="check(27, 0)">a) Are specific system which are designed to attack by
+                    manufacturer</div>
+                <div class="option" onclick="check(27, 1)">b) They are network of known hacking group</div>
+                <div class="option" onclick="check(27, 2)">c) These systems are previously compromised independent
+                    systems</div>
+                <div class="option" onclick="check(27, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(27, 4)"><span class="collapseomatic " id="id6947c0220cd71"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(27)">View Answer</button>
+            <div id="pan-27" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-27">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">29. What is known as a DOS attack?</div>
+            <div id="opts-28">
+                <div class="option" onclick="check(28, 0)">a) It is attacked to block traffic of network</div>
+                <div class="option" onclick="check(28, 1)">b) It is attacked to harm contents stored in HDD by worm
+                    spawn processes</div>
+                <div class="option" onclick="check(28, 2)">c) It is an attempt to make a machine or network resource
+                    unavailable</div>
+                <div class="option" onclick="check(28, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(28, 4)"><span class="collapseomatic " id="id6947c0220cd79"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(28)">View Answer</button>
+            <div id="pan-28" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-28">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">30. With regard to DOS attack what is not true from below options?</div>
+            <div id="opts-29">
+                <div class="option" onclick="check(29, 0)">a) We can stop DOS attack completely</div>
+                <div class="option" onclick="check(29, 1)">b) By upgrading OS vulnerability we can stop DOS attack to
+                    some extent</div>
+                <div class="option" onclick="check(29, 2)">c) DOS attack has to be stopped at network level</div>
+                <div class="option" onclick="check(29, 3)">d) Such attack can last for hours</div>
+                <div class="option" onclick="check(29, 4)"><span class="collapseomatic " id="id6947c0220cd80"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(29)">View Answer</button>
+            <div id="pan-29" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-29">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">31. What is not an important part of security protection?</div>
+            <div id="opts-30">
+                <div class="option" onclick="check(30, 0)">a) Large amount of RAM to support antivirus</div>
+                <div class="option" onclick="check(30, 1)">b) Strong passwords</div>
+                <div class="option" onclick="check(30, 2)">c) Audit log periodically</div>
+                <div class="option" onclick="check(30, 3)">d) Scan for unauthorized programs in system directories</div>
+                <div class="option" onclick="check(30, 4)"><span class="collapseomatic " id="id69514a82910d0"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(30)">View Answer</button>
+            <div id="pan-30" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-30">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: RAM has no effect on
+                    security of a system. System’s protection remains unchanged in increasing or decreasing amount of
+                    RAM.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">32. What is used to protect network from outside internet access?</div>
+            <div id="opts-31">
+                <div class="option" onclick="check(31, 0)">a) A trusted antivirus</div>
+                <div class="option" onclick="check(31, 1)">b) 24 hours scanning for virus</div>
+                <div class="option" onclick="check(31, 2)">c) Firewall to separate trusted and untrusted network</div>
+                <div class="option" onclick="check(31, 3)">d) Deny users access to websites which can potentially cause
+                    security leak</div>
+                <div class="option" onclick="check(31, 4)"><span class="collapseomatic " id="id69514a82910f2"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(31)">View Answer</button>
+            <div id="pan-31" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-31">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: Firewall create a
+                    protective barrier to secure internal network. An antivirus can only detect harmful viruses but
+                    cannot stop illegal access by remote attacker.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">33. What is the best practice in the firewall domain environment?</div>
+            <div id="opts-32">
+                <div class="option" onclick="check(32, 0)">a) Create two domain trusted and untrusted domain</div>
+                <div class="option" onclick="check(32, 1)">b) Create strong policy in firewall to support different
+                    types of users</div>
+                <div class="option" onclick="check(32, 2)">c) Create a Demilitarized zone</div>
+                <div class="option" onclick="check(32, 3)">d) Create two DMZ zones with one untrusted domain</div>
+                <div class="option" onclick="check(32, 4)"><span class="collapseomatic " id="id69514a82910ff"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(32)">View Answer</button>
+            <div id="pan-32" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-32">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: All live servers or
+                    workstations are kept in a separate zone than inside and outside to enhance protection.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">34. Which direction access cannot happen using DMZ zone by default?</div>
+            <div id="opts-33">
+                <div class="option" onclick="check(33, 0)">a) Company computer to DMZ</div>
+                <div class="option" onclick="check(33, 1)">b) Internet to DMZ</div>
+                <div class="option" onclick="check(33, 2)">c) Internet to company computer</div>
+                <div class="option" onclick="check(33, 3)">d) Company computer to internet</div>
+                <div class="option" onclick="check(33, 4)"><span class="collapseomatic " id="id69514a8291109"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(33)">View Answer</button>
+            <div id="pan-33" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-33">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: Connection from internet
+                    is never allowed to directly access internal PCs but is routed through DMZ zone to prevent attacks.
+                </div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">35. What are the two features of a tripwire file system?</div>
+            <div id="opts-34">
+                <div class="option" onclick="check(34, 0)">a) It is a tool to monitor file systems</div>
+                <div class="option" onclick="check(34, 1)">b) It is used to automatically take corrective action</div>
+                <div class="option" onclick="check(34, 2)">c) It is used to secure UNIX system</div>
+                <div class="option" onclick="check(34, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(34, 4)"><span class="collapseomatic " id="id69514a8291111"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(34)">View Answer</button>
+            <div id="pan-34" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-34">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">36. How do viruses avoid basic pattern match of antivirus?</div>
+            <div id="opts-35">
+                <div class="option" onclick="check(35, 0)">a) They are encrypted</div>
+                <div class="option" onclick="check(35, 1)">b) They act with special permissions</div>
+                <div class="option" onclick="check(35, 2)">c) They modify themselves</div>
+                <div class="option" onclick="check(35, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(35, 4)"><span class="collapseomatic " id="id69514a829111a"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(35)">View Answer</button>
+            <div id="pan-35" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-35">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">37. How does an antivirus of today identify viruses?</div>
+            <div id="opts-36">
+                <div class="option" onclick="check(36, 0)">a) Previously known patterns</div>
+                <div class="option" onclick="check(36, 1)">b) It can detect unknown patterns</div>
+                <div class="option" onclick="check(36, 2)">c) It can take high priority to increase scanning speed</div>
+                <div class="option" onclick="check(36, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(36, 4)"><span class="collapseomatic " id="id69514a8291122"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(36)">View Answer</button>
+            <div id="pan-36" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-36">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">38. What is known as a sandbox?</div>
+            <div id="opts-37">
+                <div class="option" onclick="check(37, 0)">a) It is a program which can be molded to do the desired task
+                </div>
+                <div class="option" onclick="check(37, 1)">b) It is a program that is controlled or emulated section of
+                    OS</div>
+                <div class="option" onclick="check(37, 2)">c) It is a special mode of antivirus</div>
+                <div class="option" onclick="check(37, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(37, 4)"><span class="collapseomatic " id="id69514a8291129"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(37)">View Answer</button>
+            <div id="pan-37" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-37">Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">39. What is are two safe computing practices?</div>
+            <div id="opts-38">
+                <div class="option" onclick="check(38, 0)">a) Not to open software from unknown vendors</div>
+                <div class="option" onclick="check(38, 1)">b) Open and execute programs in admin level/root</div>
+                <div class="option" onclick="check(38, 2)">c) Open and execute programs in presence of antivirus</div>
+                <div class="option" onclick="check(38, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(38, 4)"><span class="collapseomatic " id="id69514a8291131"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(38)">View Answer</button>
+            <div id="pan-38" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-38">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: Disgruntled employees have
+                    in past infected the master copies of software programs to do economic harm to the company.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">40. What are the different ways to intrude?</div>
+            <div id="opts-39">
+                <div class="option" onclick="check(39, 0)">a) Buffer overflows</div>
+                <div class="option" onclick="check(39, 1)">b) Unexpected combinations and unhandled input</div>
+                <div class="option" onclick="check(39, 2)">c) Race conditions</div>
+                <div class="option" onclick="check(39, 3)">d) All of the mentioned</div>
+                <div class="option" onclick="check(39, 4)"><span class="collapseomatic " id="id694d0de3768fc"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(39)">View Answer</button>
+            <div id="pan-39" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-39">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">41. What are the major components of the intrusion detection system?</div>
+            <div id="opts-40">
+                <div class="option" onclick="check(40, 0)">a) Analysis Engine</div>
+                <div class="option" onclick="check(40, 1)">b) Event provider</div>
+                <div class="option" onclick="check(40, 2)">c) Alert Database</div>
+                <div class="option" onclick="check(40, 3)">d) All of the mentioned</div>
+                <div class="option" onclick="check(40, 4)"><span class="collapseomatic " id="id694d0de37692c"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(40)">View Answer</button>
+            <div id="pan-40" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-40">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">42. What are the different ways to classify an IDS?</div>
+            <div id="opts-41">
+                <div class="option" onclick="check(41, 0)">a) anomaly detection</div>
+                <div class="option" onclick="check(41, 1)">b) signature based misuse</div>
+                <div class="option" onclick="check(41, 2)">c) stack based</div>
+                <div class="option" onclick="check(41, 3)">d) all of the mentioned</div>
+                <div class="option" onclick="check(41, 4)"><span class="collapseomatic " id="id694d0de37693a"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(41)">View Answer</button>
+            <div id="pan-41" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-41">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">43. What are the different ways to classify an IDS?</div>
+            <div id="opts-42">
+                <div class="option" onclick="check(42, 0)">a) Zone based</div>
+                <div class="option" onclick="check(42, 1)">b) Host &amp; Network based</div>
+                <div class="option" onclick="check(42, 2)">c) Network &amp; Zone based</div>
+                <div class="option" onclick="check(42, 3)">d) Level based</div>
+                <div class="option" onclick="check(42, 4)"><span class="collapseomatic " id="id694d0de376944"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(42)">View Answer</button>
+            <div id="pan-42" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-42">Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">44. What are the characteristics of anomaly based IDS?</div>
+            <div id="opts-43">
+                <div class="option" onclick="check(43, 0)">a) It models the normal usage of network as a noise
+                    characterization</div>
+                <div class="option" onclick="check(43, 1)">b) It doesn’t detect novel attacks</div>
+                <div class="option" onclick="check(43, 2)">c) Anything distinct from the noise is not assumed to be
+                    intrusion activity</div>
+                <div class="option" onclick="check(43, 3)">d) It detects based on signature</div>
+                <div class="option" onclick="check(43, 4)"><span class="collapseomatic " id="id694d0de37694d"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(43)">View Answer</button>
+            <div id="pan-43" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-43">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">45. What is the major drawback of anomaly detection IDS?</div>
+            <div id="opts-44">
+                <div class="option" onclick="check(44, 0)">a) These are very slow at detection</div>
+                <div class="option" onclick="check(44, 1)">b) It generates many false alarms</div>
+                <div class="option" onclick="check(44, 2)">c) It doesn’t detect novel attacks</div>
+                <div class="option" onclick="check(44, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(44, 4)"><span class="collapseomatic " id="id694d0de376956"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(44)">View Answer</button>
+            <div id="pan-44" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-44">Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">46. What are the characteristics of signature based IDS?</div>
+            <div id="opts-45">
+                <div class="option" onclick="check(45, 0)">a) Most are based on simple pattern matching algorithms</div>
+                <div class="option" onclick="check(45, 1)">b) It is programmed to interpret a certain series of packets
+                </div>
+                <div class="option" onclick="check(45, 2)">c) It models the normal usage of network as a noise
+                    characterization</div>
+                <div class="option" onclick="check(45, 3)">d) Anything distinct from the noise is assumed to be
+                    intrusion activity</div>
+                <div class="option" onclick="check(45, 4)"><span class="collapseomatic " id="id694d0de37695d"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(45)">View Answer</button>
+            <div id="pan-45" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-45">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">47. What are the drawbacks of signature based IDS?</div>
+            <div id="opts-46">
+                <div class="option" onclick="check(46, 0)">a) They are unable to detect novel attacks</div>
+                <div class="option" onclick="check(46, 1)">b) They suffer from false alarms</div>
+                <div class="option" onclick="check(46, 2)">c) They have to be programmed again for every new pattern to
+                    be detected</div>
+                <div class="option" onclick="check(46, 3)">d) All of the mentioned</div>
+                <div class="option" onclick="check(46, 4)"><span class="collapseomatic " id="id694d0de376965"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(46)">View Answer</button>
+            <div id="pan-46" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-46">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">48. What are the characteristics of Host based IDS?</div>
+            <div id="opts-47">
+                <div class="option" onclick="check(47, 0)">a) The host operating system logs in the audit information
+                </div>
+                <div class="option" onclick="check(47, 1)">b) Logs includes logins,file opens and program executions
+                </div>
+                <div class="option" onclick="check(47, 2)">c) Logs are analysed to detect tails of intrusion</div>
+                <div class="option" onclick="check(47, 3)">d) All of the mentioned</div>
+                <div class="option" onclick="check(47, 4)"><span class="collapseomatic " id="id694d0de37696d"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(47)">View Answer</button>
+            <div id="pan-47" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-47">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">49. What are the drawbacks of the host based IDS?</div>
+            <div id="opts-48">
+                <div class="option" onclick="check(48, 0)">a) Unselective logging of messages may increase the audit
+                    burdens</div>
+                <div class="option" onclick="check(48, 1)">b) Selective logging runs the risk of missed attacks</div>
+                <div class="option" onclick="check(48, 2)">c) They are very fast to detect</div>
+                <div class="option" onclick="check(48, 3)">d) They have to be programmed for new patterns</div>
+                <div class="option" onclick="check(48, 4)"><span class="collapseomatic " id="id694d0de376974"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(48)">View Answer</button>
+            <div id="pan-48" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-48">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">50. What are the strengths of the host based IDS?</div>
+            <div id="opts-49">
+                <div class="option" onclick="check(49, 0)">a) Attack verification</div>
+                <div class="option" onclick="check(49, 1)">b) System specific activity</div>
+                <div class="option" onclick="check(49, 2)">c) No additional hardware required</div>
+                <div class="option" onclick="check(49, 3)">d) All of the mentioned</div>
+                <div class="option" onclick="check(49, 4)"><span class="collapseomatic " id="id694d0de37697c"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(49)">View Answer</button>
+            <div id="pan-49" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-49">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">51. What are characteristics of stack based IDS?</div>
+            <div id="opts-50">
+                <div class="option" onclick="check(50, 0)">a) They are integrated closely with the TCP/IP stack and
+                    watch packets</div>
+                <div class="option" onclick="check(50, 1)">b) The host operating system logs in the audit information
+                </div>
+                <div class="option" onclick="check(50, 2)">c) It is programmed to interpret a certain series of packets
+                </div>
+                <div class="option" onclick="check(50, 3)">d) It models the normal usage of network as a noise
+                    characterization</div>
+                <div class="option" onclick="check(50, 4)"><span class="collapseomatic " id="id694d0de376983"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(50)">View Answer</button>
+            <div id="pan-50" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-50">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">52. What are characteristics of Network based IDS?</div>
+            <div id="opts-51">
+                <div class="option" onclick="check(51, 0)">a) They look for attack signatures in network traffic</div>
+                <div class="option" onclick="check(51, 1)">b) Filter decides which traffic will not be discarded or
+                    passed</div>
+                <div class="option" onclick="check(51, 2)">c) It is programmed to interpret a certain series of packet
+                </div>
+                <div class="option" onclick="check(51, 3)">d) It models the normal usage of network as a noise
+                    characterization</div>
+                <div class="option" onclick="check(51, 4)"><span class="collapseomatic " id="id694d0de37698b"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(51)">View Answer</button>
+            <div id="pan-51" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-51">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">53. What are strengths of Network based IDS?</div>
+            <div id="opts-52">
+                <div class="option" onclick="check(52, 0)">a) Cost of ownership reduced</div>
+                <div class="option" onclick="check(52, 1)">b) Malicious intent detection</div>
+                <div class="option" onclick="check(52, 2)">c) Real time detection and response</div>
+                <div class="option" onclick="check(52, 3)">d) All of the mentioned</div>
+                <div class="option" onclick="check(52, 4)"><span class="collapseomatic " id="id694d0de376992"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(52)">View Answer</button>
+            <div id="pan-52" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-52">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">54. What is the preferred way of encryption?</div>
+            <div id="opts-53">
+                <div class="option" onclick="check(53, 0)">a) pre shared secret key</div>
+                <div class="option" onclick="check(53, 1)">b) using key distribution center (KDC)</div>
+                <div class="option" onclick="check(53, 2)">c) public key-encryption</div>
+                <div class="option" onclick="check(53, 3)">d) symmetric key</div>
+                <div class="option" onclick="check(53, 4)"><span class="collapseomatic " id="id693ffca31cc31"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(53)">View Answer</button>
+            <div id="pan-53" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-53">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: Pre Shared key can be
+                    compromised and either party can be suspected. Likewise KDC or symmetric key can have breach which
+                    are undesirable. Public and private key encryption is a known industry standard.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">55. What is not a role of encryption?</div>
+            <div id="opts-54">
+                <div class="option" onclick="check(54, 0)">a) It is used to protect data from unauthorized access during
+                    transmission</div>
+                <div class="option" onclick="check(54, 1)">b) It is used to ensure user authentication</div>
+                <div class="option" onclick="check(54, 2)">c) It is used to ensure data integrity</div>
+                <div class="option" onclick="check(54, 3)">d) It is used to ensure data corruption doesn’t happens</div>
+                <div class="option" onclick="check(54, 4)"><span class="collapseomatic " id="id693ffca31cc58"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(54)">View Answer</button>
+            <div id="pan-54" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-54">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: Encryption doesn’t have
+                    error correction or detection facility thus cannot be used to safeguard from data corruption.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">56. What is cipher-block chaining?</div>
+            <div id="opts-55">
+                <div class="option" onclick="check(55, 0)">a) Data is logically ‘ANDed’ with previous block</div>
+                <div class="option" onclick="check(55, 1)">b) Data is logically ‘ORed’ with previous block</div>
+                <div class="option" onclick="check(55, 2)">c) Data is logically ‘XORed’ with previous block</div>
+                <div class="option" onclick="check(55, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(55, 4)"><span class="collapseomatic " id="id693ffca31cc65"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(55)">View Answer</button>
+            <div id="pan-55" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-55">Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">57. What is not an encryption standard?</div>
+            <div id="opts-56">
+                <div class="option" onclick="check(56, 0)">a) AES</div>
+                <div class="option" onclick="check(56, 1)">b) TES</div>
+                <div class="option" onclick="check(56, 2)">c) Triple DES</div>
+                <div class="option" onclick="check(56, 3)">d) DES</div>
+                <div class="option" onclick="check(56, 4)"><span class="collapseomatic " id="id693ffca31cc6f"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(56)">View Answer</button>
+            <div id="pan-56" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-56">Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">58. Which of the following is not a stream cipher?</div>
+            <div id="opts-57">
+                <div class="option" onclick="check(57, 0)">a) Two fish</div>
+                <div class="option" onclick="check(57, 1)">b) RC5</div>
+                <div class="option" onclick="check(57, 2)">c) RC4</div>
+                <div class="option" onclick="check(57, 3)">d) TBONE</div>
+                <div class="option" onclick="check(57, 4)"><span class="collapseomatic " id="id693ffca31cc78"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(57)">View Answer</button>
+            <div id="pan-57" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-57">Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">59. What is a Hash Function?</div>
+            <div id="opts-58">
+                <div class="option" onclick="check(58, 0)">a) It creates a small flexible block of data</div>
+                <div class="option" onclick="check(58, 1)">b) It creates a small,fixed block of data</div>
+                <div class="option" onclick="check(58, 2)">c) It creates a encrypted block of data</div>
+                <div class="option" onclick="check(58, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(58, 4)"><span class="collapseomatic " id="id693ffca31cc81"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(58)">View Answer</button>
+            <div id="pan-58" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-58">Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">60. MD5 produces __________ bits hash data.</div>
+            <div id="opts-59">
+                <div class="option" onclick="check(59, 0)">a) 128</div>
+                <div class="option" onclick="check(59, 1)">b) 150</div>
+                <div class="option" onclick="check(59, 2)">c) 160</div>
+                <div class="option" onclick="check(59, 3)">d) 112</div>
+                <div class="option" onclick="check(59, 4)"><span class="collapseomatic " id="id693ffca31cc89"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(59)">View Answer</button>
+            <div id="pan-59" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-59">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">61. SHA-1 produces __________ bit of hash.</div>
+            <div id="opts-60">
+                <div class="option" onclick="check(60, 0)">a) 128</div>
+                <div class="option" onclick="check(60, 1)">b) 160</div>
+                <div class="option" onclick="check(60, 2)">c) 150</div>
+                <div class="option" onclick="check(60, 3)">d) 112</div>
+                <div class="option" onclick="check(60, 4)"><span class="collapseomatic " id="id693ffca31cc91"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(60)">View Answer</button>
+            <div id="pan-60" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-60">Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">62. Which two of the following are authentication algorithms?</div>
+            <div id="opts-61">
+                <div class="option" onclick="check(61, 0)">a) MAC</div>
+                <div class="option" onclick="check(61, 1)">b) AES</div>
+                <div class="option" onclick="check(61, 2)">c) DAS</div>
+                <div class="option" onclick="check(61, 3)">d) Digital-signature</div>
+                <div class="option" onclick="check(61, 4)"><span class="collapseomatic " id="id693ffca31cc98"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(61)">View Answer</button>
+            <div id="pan-61" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-61">Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">63. What is the role of Key Distribution Center?</div>
+            <div id="opts-62">
+                <div class="option" onclick="check(62, 0)">a) It is used to distribute keys to everyone in world</div>
+                <div class="option" onclick="check(62, 1)">b) It intended to reduce the risks inherent in exchanging
+                    keys</div>
+                <div class="option" onclick="check(62, 2)">c) All of the mentioned</div>
+                <div class="option" onclick="check(62, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(62, 4)"><span class="collapseomatic " id="id693ffca31cca0"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(62)">View Answer</button>
+            <div id="pan-62" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-62">Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.</div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">64. Which one of the following is not a secondary storage?</div>
+            <div id="opts-63">
+                <div class="option" onclick="check(63, 0)">a) Magnetic disks</div>
+                <div class="option" onclick="check(63, 1)">b) Magnetic tapes</div>
+                <div class="option" onclick="check(63, 2)">c) RAM</div>
+                <div class="option" onclick="check(63, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(63, 4)"><span class="collapseomatic " id="id69402fbf121fe"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(63)">View Answer</button>
+            <div id="pan-63" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-63"> Answer: c</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.<br></div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">65. Which private network uses storage protocol rather than networking protocol?</div>
+            <div id="opts-64">
+                <div class="option" onclick="check(64, 0)">a) storage area network</div>
+                <div class="option" onclick="check(64, 1)">b) local area network</div>
+                <div class="option" onclick="check(64, 2)">c) wide area network</div>
+                <div class="option" onclick="check(64, 3)">d) none of the mentioned</div>
+                <div class="option" onclick="check(64, 4)"><span class="collapseomatic " id="id69402fbf12223"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(64)">View Answer</button>
+            <div id="pan-64" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-64"> Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.<br></div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">66. The time for the disk arm to move the heads to the cylinder containing the desired
+                sector is called ___________</div>
+            <div id="opts-65">
+                <div class="option" onclick="check(65, 0)">a) disk time</div>
+                <div class="option" onclick="check(65, 1)">b) seek time</div>
+                <div class="option" onclick="check(65, 2)">c) arm time</div>
+                <div class="option" onclick="check(65, 3)">d) sector time</div>
+                <div class="option" onclick="check(65, 4)"><span class="collapseomatic " id="id69402fbf12230"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(65)">View Answer</button>
+            <div id="pan-65" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-65"> Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.<br></div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">67. Which algorithm of disk scheduling selects the request with the least seek time from
+                the current head positions?</div>
+            <div id="opts-66">
+                <div class="option" onclick="check(66, 0)">a) SSTF scheduling</div>
+                <div class="option" onclick="check(66, 1)">b) FCFS scheduling</div>
+                <div class="option" onclick="check(66, 2)">c) SCAN scheduling</div>
+                <div class="option" onclick="check(66, 3)">d) LOOK scheduling</div>
+                <div class="option" onclick="check(66, 4)"><span class="collapseomatic " id="id69402fbf12239"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(66)">View Answer</button>
+            <div id="pan-66" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-66"> Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.<br></div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">68. The operating system is responsible for?</div>
+            <div id="opts-67">
+                <div class="option" onclick="check(67, 0)">a) disk initialization</div>
+                <div class="option" onclick="check(67, 1)">b) booting from disk</div>
+                <div class="option" onclick="check(67, 2)">c) bad-block recovery</div>
+                <div class="option" onclick="check(67, 3)">d) all of the mentioned</div>
+                <div class="option" onclick="check(67, 4)"><span class="collapseomatic " id="id69402fbf12242"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(67)">View Answer</button>
+            <div id="pan-67" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-67"> Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.<br></div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">69. A swap space can reside in ___________</div>
+            <div id="opts-68">
+                <div class="option" onclick="check(68, 0)">a) Separate disk partition</div>
+                <div class="option" onclick="check(68, 1)">b) RAM</div>
+                <div class="option" onclick="check(68, 2)">c) Cache</div>
+                <div class="option" onclick="check(68, 3)">d) None of the mentioned</div>
+                <div class="option" onclick="check(68, 4)"><span class="collapseomatic " id="id69402fbf1224b"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(68)">View Answer</button>
+            <div id="pan-68" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-68"> Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.<br></div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">70. RAID level 1 refers to ___________</div>
+            <div id="opts-69">
+                <div class="option" onclick="check(69, 0)">a) disk arrays with striping</div>
+                <div class="option" onclick="check(69, 1)">b) disk mirroring</div>
+                <div class="option" onclick="check(69, 2)">c) both disk arrays with striping and disk mirroring</div>
+                <div class="option" onclick="check(69, 3)">d) none of the mentioned</div>
+                <div class="option" onclick="check(69, 4)"><span class="collapseomatic " id="id69402fbf12254"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(69)">View Answer</button>
+            <div id="pan-69" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-69"> Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: A variety of
+                    disk-organization techniques is called “redundant arrays of independent disks (RAID)”.<br></div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">71. When we write something on the disk, which one of the following can not happen?
+            </div>
+            <div id="opts-70">
+                <div class="option" onclick="check(70, 0)">a) successful completion</div>
+                <div class="option" onclick="check(70, 1)">b) partial failure</div>
+                <div class="option" onclick="check(70, 2)">c) total failure</div>
+                <div class="option" onclick="check(70, 3)">d) none of the mentioned</div>
+                <div class="option" onclick="check(70, 4)"><span class="collapseomatic " id="id69402fbf1225c"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(70)">View Answer</button>
+            <div id="pan-70" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-70"> Answer: d</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.<br></div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">72. What will happen during the recovery from a failure?</div>
+            <div id="opts-71">
+                <div class="option" onclick="check(71, 0)">a) each pair of physical block is examined</div>
+                <div class="option" onclick="check(71, 1)">b) specified pair of physical block is examined</div>
+                <div class="option" onclick="check(71, 2)">c) first pair of physical block is examined</div>
+                <div class="option" onclick="check(71, 3)">d) none of the mentioned</div>
+                <div class="option" onclick="check(71, 4)"><span class="collapseomatic " id="id69402fbf12265"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(71)">View Answer</button>
+            <div id="pan-71" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-71"> Answer: a</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.<br></div>
+            </div>
+        </div>
+        <div class="q-block">
+            <div class="q-text">73. The replacement of a bad block generally is not totally automatic because
+                ___________</div>
+            <div id="opts-72">
+                <div class="option" onclick="check(72, 0)">a) data in bad block can not be replaced</div>
+                <div class="option" onclick="check(72, 1)">b) data in bad block is usually lost</div>
+                <div class="option" onclick="check(72, 2)">c) bad block does not contain any data</div>
+                <div class="option" onclick="check(72, 3)">d) none of the mentioned</div>
+                <div class="option" onclick="check(72, 4)"><span class="collapseomatic " id="id69402fbf1226d"
+                        tabindex="" title="View Answer">View Answer</span></div>
+            </div>
+            <button class="sf-btn" onclick="toggle(72)">View Answer</button>
+            <div id="pan-72" class="ans-panel">
+                <p><span class="label">Answer:</span> <span id="ans-text-72"> Answer: b</span></p>
+                <div class="explanation"><span class="label">Explanation:</span> Explanation: None.<br></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let score = 0; let totalAttempted = 0;
+        function toggle(i) {
+            let p = document.getElementById('pan-' + i);
+            p.style.display = (p.style.display === 'block') ? 'none' : 'block';
+        }
+        window.check = function (qi, oi) {
+            let cont = document.getElementById('opts-' + qi);
+            if (cont.style.pointerEvents === 'none') return;
+            let opts = cont.getElementsByClassName('option');
+            let ansStr = document.getElementById('ans-text-' + qi).textContent.toLowerCase();
+            let correctLetter = ansStr.split('answer:')[1]?.trim()[0] || ansStr.trim()[0];
+
+            cont.style.pointerEvents = 'none';
+            totalAttempted++;
+
+            for (let i = 0; i < opts.length; i++) {
+                let text = opts[i].textContent.trim().toLowerCase();
+                if (text.startsWith(correctLetter)) {
+                    opts[i].classList.add('correct');
+                    if (i === oi) score++;
+                } else if (i === oi) {
+                    opts[i].classList.add('incorrect');
+                }
+            }
+            document.getElementById('score').innerText = score;
+            document.getElementById('total').innerText = totalAttempted;
+            toggle(qi);
+        }
+    </script>
+</body>
+
+</html>
